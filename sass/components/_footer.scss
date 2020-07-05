@@ -1,0 +1,214 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+.footer .logo {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-style: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: #ffffff;
+  }
+  @media screen and (max-width: 1119px) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+.adress {
+  margin-bottom: 0px;
+
+  color: #ffffff;
+  background-color: #2f303a;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7em;
+}
+
+.footer .contacts {
+  margin-top: 9px;
+  margin-bottom: 0px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.7em;
+}
+.connection-footer {
+  margin-bottom: 0px;
+  & .link-social {
+    margin-bottom: 60px;
+    padding-bottom: 0px;
+  }
+  & .link-social .item + .item {
+    margin-left: 10px;
+  }
+}
+.link-decoration-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: $primary-white-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+}
+.connection {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  background-color: #2f303a;
+
+  &-form input[type="email"] {
+    width: 100%;
+    height: 50px;
+    padding: 18px 12px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    margin: 0 12px 0 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .subscribe-form input[type="email"] {
+    margin-bottom: 20px;
+    min-width: 450px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .subscribe-form input[type="email"] {
+    margin-bottom: 20px;
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form input[type="email"] {
+    min-width: 358px;
+  }
+}
+.icon-send {
+  fill: currentColor;
+  margin-left: 10px;
+  margin-right: 8px;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.company {
+  display: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #2f303a;
+  text-align: center;
+  font-size: 12px;
+  line-height: 2em;
+}
+@media screen and (max-width: 767px) {
+  .container.footer-flex {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts-footer {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .contacts-footer,
+  .connection-footer {
+    width: calc(50%);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-footer {
+    width: calc(25%);
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection-footer {
+    width: calc(25%);
+    text-align: start;
+  }
+  .connection-footer .link-social {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    width: 570px;
+    height: 86px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+}

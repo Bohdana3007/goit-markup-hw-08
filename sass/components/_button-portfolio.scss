@@ -1,0 +1,192 @@
+.button-class {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-class {
+    flex-wrap: unset;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-class {
+    margin-bottom: 50px;
+  }
+}
+.button-portfolio {
+  font-family: Roboto;
+  color: #212121;
+  background-color: #f5f4fa;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+.button-portfolio:not(:last-child) {
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px) and (min-width: 404px) {
+  .button-portfolio:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-portfolio {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-portfolio {
+    margin-bottom: 0;
+  }
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+.project img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.card-descrption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 63px 24px;
+  pointer-events: none;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $primary-white-color;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-content {
+  padding: 20px 24px;
+  width: 370px;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1200px) {
+  .our-projects {
+    padding-top: 93px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .our-projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: $primary-white-color;
+  border: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+
+  // &:nth-child(3n) {
+  //   margin-right: 0px;
+  // }
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0px;
+  // }
+  &:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+.project:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .project {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .project:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .project:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    width: calc((100% - (30px * 2)) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+.project:hover .card-descrption {
+  cursor: pointer;
+  transform: translateY(0);
+  transition: 250ms;
+}
+.project {
+  & .name {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: #212121;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  & .title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.87;
+    color: #757575;
+  }
+}

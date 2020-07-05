@@ -1,0 +1,105 @@
+// .hero {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 100%;
+//   min-height: 400px;
+//   text-align: center;
+//   background-color: #212121;
+//   background-image: -webkit-gradient(
+//       linear,
+//       left top,
+//       right top,
+//       from(rgba(47, 48, 58, 0.8)),
+//       to(rgba(47, 48, 58, 0.8))
+//     ),
+//     url("../images/Header-img.jpg");
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.8),
+//       rgba(47, 48, 58, 0.8)
+//     ),
+//     url("../images/Header-img.jpg");
+//   background-size: cover;
+//   &-title {
+//     margin-bottom: 30px;
+//     font-weight: 900;
+//     font-size: 26px;
+//     line-height: 1.62;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: #fff;
+//   }
+// }
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  min-height: 400px;
+  text-align: center;
+  background-color: #212121;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(47, 48, 58, 0.8)),
+      to(rgba(47, 48, 58, 0.8))
+    ),
+    url(../images/Header-img);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+  background-size: cover;
+}
+@media not all,
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.8)),
+        to(rgba(47, 48, 58, 0.8))
+      ),
+      url("../images/Header-img.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/Header-img.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 769px) {
+  .hero {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    max-width: 1600px;
+    height: 400px;
+  }
+}
+
+.hero-title {
+  font-family: Roboto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}

@@ -1,0 +1,72 @@
+$primary-text-color: #212121;
+$title-text-color: #757575;
+$accent-color: #2196f3;
+$primary-white-color: #ffffff;
+$background-title: rgba(47, 48, 58, 0.8);
+$footer-background-color: #2f303a;
+$background-behind-layout: #e5e5e5;
+$clients-icons-color: #afb1b8;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+// Шрифти
+$mail-font: Roboto, sans-serif;
+$logo-font: Raleway;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  color: #757575;
+  letter-spacing: 0.03em;
+}
+.body.modal-open {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.link {
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  height: 100%;
+}
